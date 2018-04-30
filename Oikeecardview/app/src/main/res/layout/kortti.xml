@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+    android:layout_marginTop="@dimen/default_padding"
+    android:padding="@dimen/default_padding"
+    android:id="@+id/card"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="128dp">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/default_padding"
+
+            android:layout_toStartOf="@id/imageButton"
+            android:padding="@dimen/default_padding"
+
+            android:textSize="@dimen/title_text_size"
+            tools:text="Lorem w4rrrrrrrrrrrrrrrrrrrrrg" />
+
+
+        <TextView
+            android:id="@+id/body_shortened"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            android:padding="@dimen/default_padding"
+            android:text="adipiscing elit. In a dignissim turpis."
+
+            android:layout_margin="@dimen/default_padding"
+
+            android:textSize="@dimen/body_text_size"
+
+            />
+
+        <Button
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/body_shortened"
+
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/default_padding"
+
+            android:layout_marginStart="0dp"
+            android:onClick="onButtonClick"
+
+            android:padding="0dp"
+
+            android:text="kauppaan" />
+
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

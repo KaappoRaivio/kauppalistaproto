@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_margin_padding">16dp</string>
+
+
+    <dimen name="card_height">128dp</dimen>
+    <dimen name="default_padding">8dp</dimen>
+    <dimen name="title_text_size">16sp</dimen>
+    <dimen name="body_text_size">12sp</dimen>
+</resources>
