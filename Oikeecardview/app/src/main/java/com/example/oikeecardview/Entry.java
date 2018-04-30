@@ -12,10 +12,10 @@ public class Entry {
     private final int id;
 
     private static int numberOfInstances = 0;
-    private static List<Entry> instances = new ArrayList<Entry>();
+    private static List<Entry> instances = new ArrayList<>();
 
 
-    public Entry(String title, String body) {
+    Entry(String title, String body) {
         this.title = title;
         this.body = body;
 
@@ -62,6 +62,7 @@ public class Entry {
             return instances.get(index);
         }
         else {
+            System.err.println("findEntryById: Invalid index " + iId + "!");
             return null;
         }
 

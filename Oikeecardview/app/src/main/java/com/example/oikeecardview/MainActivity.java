@@ -1,6 +1,7 @@
 package com.example.oikeecardview;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
@@ -99,7 +100,10 @@ public class MainActivity extends Activity {
     public void onButtonClick(View view) {
         int entryId = (Integer) view.getTag();
         Entry entry = Entry.findEntryById(entryId);
-        toasti(entryId + "");
+
+        Intent starttaaja = new Intent(this, CreateList.class);
+        starttaaja.putExtra("entry", entryId);
+        startActivity(starttaaja);
     }
 
 
